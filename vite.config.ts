@@ -5,8 +5,9 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
-      // Configuración clave para GitHub Pages (Rutas relativas)
-      base: './', 
+      // IMPORTANTE: Usa el nombre EXACTO de tu repositorio entre barras
+      // Si tu repo es 'facturpro', usa '/facturpro/'
+      base: '/facturpro/', 
       
       server: {
         port: 3000,
@@ -22,11 +23,8 @@ export default defineConfig(({ mode }) => {
           '@': path.resolve(__dirname, '.'),
         }
       },
-      // Optimización opcional para build
       build: {
         outDir: 'dist',
-        assetsDir: 'assets',
-        emptyOutDir: true,
       }
     };
 });
