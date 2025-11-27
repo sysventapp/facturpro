@@ -1,0 +1,5 @@
+{
+  "name": "FactuPeru POS",
+  "description": "Sistema de Punto de Venta (POS) con integración simulada de Facturación Electrónica Peruana (SUNAT) y asistente de inventario con IA.",
+  "requestFramePermissions": []
+}
